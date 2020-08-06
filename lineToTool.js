@@ -15,11 +15,11 @@ function LineToTool(){
 				startMouseX = mouseX;
 				startMouseY = mouseY;
 				drawing = true;
-				//loadPixels();
+				loadPixels();
 			}
 
 			else{
-				updatePixels();
+				//updatePixels();
 				line(startMouseX, startMouseY, mouseX, mouseY);
 			}
 

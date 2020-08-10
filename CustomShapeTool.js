@@ -9,4 +9,15 @@
 
 */
 
-var editButton
+
+
+function CustomShapeTool() {
+    this.name = "customShapeTool";
+    
+    //this is a link to a jpeg image of the tool
+    //this.id = 
+        
+    var editButton;
+    var finishButton;
+
+}

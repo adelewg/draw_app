@@ -19,5 +19,12 @@ function CustomShapeTool() {
         
     var editButton;
     var finishButton;
+    
+    var editMode = false;
+    
+    this.draw = function(){
+        
+        
+    }
 
 }

@@ -14,15 +14,28 @@
 function CustomShapeTool() {
     this.name = "customShapeTool";
     
-    //this is a link to a jpeg image of the tool
-    //this.id = 
+    //this is a link to a jpeg image of the tool and I need to update it
+    this.id = "assets/freehand.jpg";
         
     var editButton;
     var finishButton;
     
     var editMode = false;
+    var currentShape = [];
     
     this.draw = function(){
+        if(mouseIsPressed){
+            currentShape.push({
+                x: mouseX,
+                y: mouseY
+            });
+        }
+        
+        beginShape()
+        for(var i = 0; i < currentShape.length; i++) {
+            vertex(currentShape[i].x, currentShape[i].y);
+        }
+        endShape()
         
         
     }

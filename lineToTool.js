@@ -1,4 +1,5 @@
 /* This function draws straight lines onto the canvas*/
+/* */
 
 function LineToTool(){
 	this.icon = "assets/lineTo.jpg";
@@ -19,7 +20,7 @@ function LineToTool(){
 			}
 
 			else{
-				//updatePixels();
+				updatePixels();
 				line(startMouseX, startMouseY, mouseX, mouseY);
 			}
 

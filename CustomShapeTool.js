@@ -17,8 +17,13 @@ function CustomShapeTool() {
     //this is a link to a jpeg image of the tool and I need to update it
     this.id = "assets/freehand.jpg";
         
-    var editButton;
-    var finishButton;
+    var editButton = createButton('Edit Shape');
+    var finishButton = createButton('Finish Shape');
+    
+    finishButton.mousePressed(function(){
+        loadPixels();
+        currentShape = [];
+    })
     
     var editMode = false;
     var currentShape = [];

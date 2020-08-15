@@ -22,12 +22,27 @@
   	<div class="wrapper">
       <div class="box header">My Drawing App
 
-        <button id="clearButton">Clear</button>
+        <button id="clearButton">Clear Drawing</button>
         <button id="saveImageButton">Save Image</button>
       </div>
       <div class="box" id="sidebar"></div>
       <div id="content"></div>
-      <div class="box colourPalette"></div>
+      <div class="box colourPalette">
+          <div class = "colorInContainer">
+              <p>color</p>
+              <input type = "color" id = "colourInput">
+          </div>
+          
+          <div class = "lineInContainer">
+              <p>Line Weight</p>
+              <input type = "number" id = "lineWeightInput" min = "0">
+          </div>
+          
+          <div class = "LineOpContainer">
+              <p>Line Alpha</p>
+              <input type = "number" id = "LineOpacityInput" steps = "0.1" max = "1" min = "0">
+          </div>
+        </div>
       <div class="box options"></div>
 	</div>
   </body>

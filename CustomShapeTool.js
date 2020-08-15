@@ -67,7 +67,7 @@ function CustomShapeTool() {
         
     }
     
-    
+    //add this to helper functions
     this.mousePressOnCanvas = function(canvas) {
         if (mouseX > canvas.elt.offsetLeft && 
             mouseX < (canvas.elt.offsetLeft + canvas.width) && 

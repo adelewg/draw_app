@@ -20,7 +20,7 @@ function setup() {
     //create a slider to set the colour of the canvas
     canvSlider = createSlider(0, 255, 0,0);
     canvSlider.parent(controlsDiv); 
-    backcol = canvSlider.value();
+    
     canvSlider.style('width', '80px');
     
 
@@ -43,6 +43,7 @@ function setup() {
 }
 
 function draw() {
+    backcol = canvSlider.value();
     background(backcol);
 	//call the draw function from the selected tool.
 	//hasOwnProperty is a javascript function that tests

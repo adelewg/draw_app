@@ -1,4 +1,5 @@
 //Displays and handles the colour palette.
+
 function ColourPalette() {
 	//a list of web colour strings
 	this.colours = ["black", "silver", "gray", "white", "maroon", "red", "purple",
@@ -46,7 +47,8 @@ function ColourPalette() {
 			colourSwatch.class('colourSwatches');
 			colourSwatch.id(colourID);
 
-			select(".colourPalette").child(colourSwatch);
+			//select(".colourPalette").child(colourSwatch);
+            select(".colourPalette").child(colourSwatch);
 			select("#" + colourID).style("background-color", this.colours[i]);
 			colourSwatch.mouseClicked(colourClick)
 		}
@@ -56,6 +58,8 @@ function ColourPalette() {
 	//call the loadColours function now it is declared
 	this.loadColours();
 }
+
+
 
 /*
 
@@ -117,5 +121,5 @@ function ColourPalette(){
     $("#colourInput").change(() => {this.loadColours();});
     
 }
-
 */
+

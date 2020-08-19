@@ -35,8 +35,11 @@ html, body {
 .colourPalette{
 	grid-area: colourP;
 	display:flex;
-	flex-direction:grid;
+	flex-direction:row;
 	flex-flow: wrap;
+    border: 2px blue solid;
+   
+    
 }
 
 .options{
@@ -51,6 +54,8 @@ html, body {
 	max-height: 40px;
 	max-width: 40px;
 	margin: 5px;
+    border: 2px black solid;
+    
 }
 
 
